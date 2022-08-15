@@ -26,8 +26,8 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/formulario', (req, res) => {
-  res.render('formulario', {
+app.get('/teamAdd', (req, res) => {
+  res.render('teamAdd', {
     layout: 'main',
   });
 });
@@ -38,11 +38,10 @@ app.get('/equipos', (req, res) => {
   res.send(equipos);
 });
 
-app.post('/formulario', upload.single('imagen'), (req, res) => {
-  res.render('formulario', {
+app.post('/teamAdd', upload.single('imagen'), (req, res) => {
+  app.use(express.text({ type: '*/*' }));
+  console.log(req.body);
+  res.render('teamAdd', {
     layout: 'main',
-    data: {
-      imagen: req.file.filename,
-    },
   });
 });
