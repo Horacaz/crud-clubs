@@ -45,3 +45,9 @@ app.post('/teamAdd', upload.single('imagen'), (req, res) => {
     layout: 'main',
   });
 });
+
+app.get('/teamsOverview', (req, res) => {
+  res.render('teamsOverview', {
+    layout: 'main',
+  });
+});
