@@ -1,0 +1,14 @@
+.form-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container span {
+  font-weight: 500;
+}
+.form-container button {
+  display: block;
+  margin: auto;
+}

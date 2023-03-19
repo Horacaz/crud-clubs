@@ -1,0 +1,25 @@
+form {
+  font-weight: bolder;
+  width: 35%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(239, 238, 238);
+  margin: auto;
+  padding: 1rem;
+}
+form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  padding: 1rem;
+}
+input {
+  width: 75%;
+  margin: 0.5rem 1rem;
+  padding: 0.3rem;
+}
+
+form button {
+  margin: 0 1rem;
+  padding: 0.5rem;
+}

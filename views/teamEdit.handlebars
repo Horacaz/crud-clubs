@@ -1,0 +1,85 @@
+<div class="form-container">
+<form action="/teamEdit/"  method="patch" enctype="multipart/form-data">
+<h3>New Information</h3>
+    <div>
+        <label for="">ID</label>
+        <div>
+            <input type="text" value={{data.id}} name="id" placeholder="555">
+        </div>
+    </div>
+
+    <div>
+        <label for="">Club Name</label>
+        <div>
+            <input type="text" value={{data.name}} name="clubName" placeholder="Arsenal FC">
+        </div>
+    </div>
+
+    <div>
+        <label for="">Shortname</label>
+        <div>
+            <input type="text" value={{data.shortName}} name="shortName" placeholder="Arsenal">
+        </div>
+    </div>
+
+    <div>
+        <label for="">TLA</label>
+        <div>
+            <input type="text" value={{data.tla}} name="tla" placeholder="ARS">
+        </div>
+    </div>
+
+    <div>
+        <label for="">Country</label>
+        <div>
+            <input type="text" value={{data.area.name}} name="country" placeholder="England">
+        </div>
+    </div>
+
+    <div>
+        <label for="">Foundation</label>
+        <div>
+            <input type="text" value={{data.founded}} name="foundation" placeholder="1886">
+        </div>
+
+    </div>
+
+    <div>
+        <label for="">Venue</label>
+        <div>
+            <input type="text" value={{data.venue}} name="venue" placeholder="Emirates Stadium">
+        </div>
+        
+    </div>
+
+    <div>
+        <label for="">Address</label>
+        <div>
+            <input type="text" value={{data.address}} name="address" placeholder="75 Drayton Park London N5 1BU">
+        </div>
+    </div>
+
+    <div>
+        <label for="">Website</label>
+        <div>
+            <input type="text" value={{data.website}} name="website" placeholder="http://arsenal.com">
+        </div>
+    </div>
+    
+    <div>
+        <label for="">Email</label>
+        <div>
+            <input type="text" value={{data.email}} name="email" placeholder="info@arsenal.co.uk">
+        </div>
+    </div>
+
+    <div>
+        <label for="">Club Crest: <span><img src={{data.crestUrl}}></span></label>
+        <div>
+            <input type="file" name="clubCrest" placeholder="Club Crest">
+        </div>
+    </div>
+    <button type="submit">Submit Changes</button>
+</form>
+</div>
+
