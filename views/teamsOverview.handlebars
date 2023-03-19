@@ -1,0 +1,33 @@
+    <div class="table-container">
+        <h2>There are currently {{data.total}} teams <a class="add-new" href="http://localhost:8080/teamAdd">Add New</a></h2>
+    <table>
+     <tr>
+        <th>Crest</th>
+        <th>Team</th>
+        <th>Country</th>
+        <th>Actions</th>
+    </tr>
+       {{#each data.teams}}
+    <tr>
+        <td>
+            {{#if crestUrl}}
+            <img src={{crestUrl}} alt="">
+            {{else}}
+            <img src='svg/not-found.svg' alt="">
+            {{/if}}
+        </td>
+        <td>
+           <p>{{name}}</p>
+        </td>
+        <td>
+         <p>{{area.name}}</p>
+        </td>
+        <td>
+            <a href="http://localhost:8080/teamEdit/{{id}}">Edit</a>
+            <a href="http://localhost:8080/teamView/{{id}}">View</a>
+            <a href="http://localhost:8080/teamDelete/{{id}}">Delete</a>
+        </td>
+    </tr>
+      {{/each}}
+</table>
+    </div>

@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="view-container">
+        <div class="club-crest">
+            <img src={{data.crestUrl}} alt="">
+            <h2> {{data.name}}</h2>
+        </div>
+    
+        <div class="club-info">
+            <div id="information">
+                <h2>Information</h2>
+                <p>Club Name: {{data.name}} ({{data.tla}})</span></p>
+                <p>Country: <span>{{data.area.name}}</span></p>
+                <p>Club Colors: <span>{{data.clubColors}}</span></p>
+                <p>Founded: <span>{{data.founded}}</span></p>
+                <p>Venue: <span>{{data.venue}}</span></p>
+            </div>
+            <div id="contact">
+                <h2>Contact</h2>
+                <p>Address: <span>{{data.address}}</span></p>
+                <p>Website: <span>{{data.website}}</span></p>
+                <p>Email: <span>{{data.email}}</span></p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="http://localhost:8080/teamEdit/{{id}}">Edit</a>
+        <a href="http://localhost:8080/teamDelete/{{id}}">Delete</a>
+    </div>
+</div>
